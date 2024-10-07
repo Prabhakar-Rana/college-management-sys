@@ -14,7 +14,7 @@ const app = express();
 connectDB();
 app.use(cors());
 app.use(cors({
-  origin: 'https://college-management-sys-frontend.vercel.app/'
+  origin: 'https://college-management-sys-frontend.vercel.app'
 }));
 
 // Middleware
