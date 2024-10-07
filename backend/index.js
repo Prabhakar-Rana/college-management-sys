@@ -13,6 +13,9 @@ const app = express();
 // Connect to MongoDB
 connectDB();
 app.use(cors());
+app.use(cors({
+  origin: 'https://college-management-sys-frontend.vercel.app/'
+}));
 
 // Middleware
 app.use(bodyParser.json());
