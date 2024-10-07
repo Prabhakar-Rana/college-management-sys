@@ -17,6 +17,10 @@ app.use(cors());
 // Middleware
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
 // Use Routes
 app.use('/api/students', studentRoutes);
 app.use('/api/courses', courseRoutes);
