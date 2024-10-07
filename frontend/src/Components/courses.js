@@ -10,7 +10,8 @@ export const Courses = () => {
   useEffect(() => {
     // Fetch data from API when the component mounts
     axios
-      .get('http://localhost:5000/api/courses') // Replace with your API URL
+      .get('college-management-sys-backend.vercel.app
+/api/courses') // Replace with your API URL
       .then((response) => {
         console.log("value==",response);
         setData(response.data);
