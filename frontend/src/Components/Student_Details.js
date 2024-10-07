@@ -12,7 +12,7 @@ export const Student_Details = () => {
   useEffect(() => {
     // Fetch data from API when the component mounts
     axios
-      .get(`college-management-sys-backend.vercel.app
+      .get(`https://college-management-sys-backend.vercel.app
 /api/students/${id}`) // Replace with your API URL
       .then((response) => {
         console.log("result==",response.data);
