@@ -11,7 +11,8 @@ export const Students = () => {
   useEffect(() => {
     // Fetch data from API when the component mounts
     axios
-      .get('http://localhost:5000/api/students') // Replace with your API URL
+      .get('college-management-sys-backend.vercel.app
+/api/students') // Replace with your API URL
       .then((response) => {
         console.log("value==",response);
         setData(response.data);
