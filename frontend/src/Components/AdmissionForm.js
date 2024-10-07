@@ -37,7 +37,8 @@ export const AdmissionForm = () => {
     console.log('Form submitted:', formData);
 
     axios
-      .post('http://localhost:5000/api/students', formData)
+      .post('college-management-sys-backend.vercel.app
+/api/students', formData)
       .then((response) => {
         console.log('Response:', response.data);
       })
