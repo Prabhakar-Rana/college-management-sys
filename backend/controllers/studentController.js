@@ -1,6 +1,8 @@
 const Student = require('../models/student');
 
 exports.getAllStudents = async (req, res) => {
+  console.log("result="+req.body);
+  console.log("i am prabhakar");
   const students = await Student.find().populate('courses');
   res.json(students);
 };
