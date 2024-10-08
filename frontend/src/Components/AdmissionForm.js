@@ -51,7 +51,7 @@ export const AdmissionForm = () => {
       <form onSubmit={handleSubmit}>
         <div className="container">
           <h1>Register</h1>
-          <p>Please fill in this form to create an account.</p>
+          <p>Please fill in this form to Take Admission.</p>
           <hr />
 
           <label htmlFor="name"><b>Name</b></label>
