@@ -3,8 +3,8 @@ const Student = require('../models/student');
 exports.getAllStudents = async (req, res) => {
   console.log("result="+req.body);
   console.log("i am prabhakar");
-  res.send('Hello, i am prabha...!');
   const students = await Student.find().populate('courses');
+  res.send(stundents);
   res.json(students);
 };
 
