@@ -1,11 +1,14 @@
 const Student = require('../models/student');
 
 exports.getAllStudents = async (req, res) => {
+  try{
   console.log("result="+req.body);
   console.log("i am prabhakar");
   const students = await Student.find().populate('courses');
-  res.send(stundents);
   res.json(students);
+  } catch(error){
+    res.send('Hello, World!'+error);
+  }
 };
 
 exports.addStudent = async (req, res) => {
